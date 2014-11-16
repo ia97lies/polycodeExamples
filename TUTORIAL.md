@@ -56,4 +56,4 @@ You have to specify the project xml
 ```
 ./PolycodePlayer ~/workspace/polycodeExamples/<path-to-project>/<projectName>.polyproject
 ```
-If you start it you get an error, because currently Polycode Player do not insert properly the / before Scripts/Main.lua, so you have to insert this in the <projectName>.polyproject where the path to the main script is specified.
+If you start it you get an error, because currently Polycode Player do not insert properly the / before Scripts/Main.lua, so you have to insert this in the &lt;projectName&gt;.polyproject where the path to the main script is specified.
