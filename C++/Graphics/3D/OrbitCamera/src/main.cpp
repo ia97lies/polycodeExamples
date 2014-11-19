@@ -3,17 +3,13 @@
 // Took the basics from Polycode Examples
 //----------------------------------------------------------------------------
 
-#include <Polycode.h>
+#include "Polycode.h"
 #include "PolycodeView.h"
+#include "HelloPolycodeApp.h"
 
-using namespace Polycode;
-
-class HelloPolycodeApp : public EventHandler {
-public:
-    HelloPolycodeApp(PolycodeView *view);
-    ~HelloPolycodeApp();
-    bool Update();
-    
-private:
-	Core *core;
-};
+int main(int argc, char *argv[]) {
+	PolycodeView *view = new PolycodeView("Hello Polycode!");
+	HelloPolycodeApp *app = new HelloPolycodeApp(view);
+	while(app->Update()) {}
+	return 0;
+}

@@ -1,3 +1,8 @@
+//----------------------------------------------------------------------------
+// The MIT License
+// Took the basics from Polycode Examples
+//----------------------------------------------------------------------------
+
 #include "HelloPolycodeApp.h"
 
 HelloPolycodeApp::HelloPolycodeApp(PolycodeView *view) : EventHandler() {

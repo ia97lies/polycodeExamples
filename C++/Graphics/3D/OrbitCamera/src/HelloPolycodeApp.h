@@ -8,10 +8,11 @@
 
 using namespace Polycode;
 
-class HelloPolycodeApp : public EventHandler {
+class HelloPolycodeApp {
 public:
     HelloPolycodeApp(PolycodeView *view);
     ~HelloPolycodeApp();
+    void handleEvent(Event *e);
     bool Update();
     
 private:

@@ -31,3 +31,7 @@ In the end you have a ready to use polycode IDE or Player.
 Due some errors currently not fixed in the IDE text editor I use vim as editor and the IDE as the runner.
 But as well it works using the Player, but then the project xml must be adjusted as there seems to be another bug in Polycode Player not properly insert / in building up the path to the Main.lua (or what ever name you specified for the main lua file).
 
+# Preconditions
+* You $HOME/workspace directory
+* You have a ready to use Polycode in the $HOME/workspace/Polycode
+
