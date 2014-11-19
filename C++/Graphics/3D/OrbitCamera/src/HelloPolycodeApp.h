@@ -8,7 +8,10 @@
 
 using namespace Polycode;
 
-class HelloPolycodeApp {
+#define RADIANS_PER_DEGREE 0.01745329f
+#define CAMERA_STEP_SIZE 5.0f
+
+class HelloPolycodeApp : public EventHandler {
 public:
     HelloPolycodeApp(PolycodeView *view);
     ~HelloPolycodeApp();
@@ -17,4 +20,10 @@ public:
     
 private:
 	Core *core;
+  float pitch;
+  float yaw;
+  float distance;
+
+  void rotateCamera(float &angle, float value);
+  void cameraUpdate(); 
 };
