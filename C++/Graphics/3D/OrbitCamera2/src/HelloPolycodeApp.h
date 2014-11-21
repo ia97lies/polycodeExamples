@@ -5,6 +5,9 @@
 
 #include <Polycode.h>
 #include "PolycodeView.h"
+#include "bullet/LinearMath/btVector3.h"
+#include "bullet/LinearMath/btMatrix3x3.h"
+#include "bullet/LinearMath/btQuaternion.h"
 
 using namespace Polycode;
 
@@ -19,13 +22,14 @@ public:
     bool Update();
     
 private:
-	Core *core;
-  Scene *scene;
-  float pitch;
-  float yaw;
-  float distance;
-  Vector3 upVector;
-  Vector3 target;
+	Core *m_core;
+  Scene *m_scene;
+  float m_pitch;
+  float m_yaw;
+  float m_distance;
+  btVector3 m_upVector;
+  Vector3 m_position;
+  Vector3 m_target;
 
   void rotateCamera(float &angle, float value);
   void cameraUpdate(); 
