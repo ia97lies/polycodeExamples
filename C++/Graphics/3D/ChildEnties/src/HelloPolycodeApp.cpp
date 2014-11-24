@@ -22,8 +22,8 @@ HelloPolycodeApp::HelloPolycodeApp(PolycodeView *view) : EventHandler() {
   m_core->getInput()->addEventListener(this, InputEvent::EVENT_KEYDOWN);
   m_core->getInput()->addEventListener(this, InputEvent::EVENT_KEYUP);
 
-	m_scene->getDefaultCamera()->setPosition(Vector3(7, 7, 7) - m_curBox->getPosition());
-	m_scene->getDefaultCamera()->lookAt(m_curBox->getPosition());
+	m_scene->getDefaultCamera()->setPosition(m_curBox->getCombinedPosition() - Vector3(7, 7, 7));
+	m_scene->getDefaultCamera()->lookAt(m_curBox->getCombinedPosition());
 }
 
 HelloPolycodeApp::~HelloPolycodeApp() {
